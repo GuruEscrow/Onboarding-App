@@ -64,8 +64,7 @@ public class WebDriverUtility {
 			WebDriverManager.edgedriver().setup();
 
 			EdgeOptions edgeOptions = new EdgeOptions();
-			edgeOptions
-					.addArguments("user-data-dir=C:\\Users\\Guruprasad V\\AppData\\Local\\Microsoft\\Edge\\User Data");
+			edgeOptions.addArguments("user-data-dir=C:\\Users\\Guruprasad V\\AppData\\Local\\Microsoft\\Edge\\User Data");
 			edgeOptions.addArguments("--profile-directory=Default");
 			edgeOptions.addArguments("--remote-allow-origins=*");
 			driver = new EdgeDriver(edgeOptions);

@@ -19,10 +19,10 @@ public class Table_FiltersForAllPages {
 	 */
 	// This method is used to return EscrowList search WebElement
 	@FindBy(className = "css-1juu494")
-	private WebElement escrowListSearchField;
+	private WebElement SearchField;
 
-	public WebElement escrowListSearchWebElement() {
-		return escrowListSearchField;
+	public WebElement SearchWebElement() {
+		return SearchField;
 	}
 
 	// This method is used to click on the calendar button
@@ -38,18 +38,18 @@ public class Table_FiltersForAllPages {
 	 */
 	// This method is used to get the Escrow List table header
 	@FindBy(xpath = "//thead/tr/th")
-	private List<WebElement> escrowListTableHeader;
+	private List<WebElement> tableHeader;
 
-	public List<WebElement> escrowListTableHeader() {
-		return escrowListTableHeader;
+	public List<WebElement> getTableHeader() {
+		return tableHeader;
 	}
 
 	// This method is used to get the Escrow List table body
 	@FindBy(xpath = "//tbody/tr")
-	private List<WebElement> escrowListEntriesInRows;
+	private List<WebElement> entriesInRows;
 
-	public List<WebElement> escrowListTableBody() {
-		return escrowListEntriesInRows;
+	public List<WebElement> getTableBody() {
+		return entriesInRows;
 	}
 
 	// This method is used to get the previous page navigation button

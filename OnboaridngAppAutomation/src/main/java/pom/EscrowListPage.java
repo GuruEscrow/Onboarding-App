@@ -40,8 +40,33 @@ public class EscrowListPage {
 	@FindBy(xpath = "//div[text()='Escrow A/C List']/parent::button")
 	private WebElement escrowAccListMenu;
 	
+	//This holds userMangement Menu
 	@FindBy(xpath = "//div[text()='User Management']/parent::button")
 	private WebElement userMangementMenu;
+	
+	//This holds KYC list menu button present in the side nav and method will return as webElement
+	@FindBy(xpath = "//div[contains(@class,'SideNavContainer_Active__5w+8h')]/parent::button")
+	private WebElement sideNavKYCListMenu;
+	
+	public WebElement sideNavKYCListMenu() {
+		return sideNavKYCListMenu;
+	}
+	
+	//This holds contract list menu button present in the side nav and method will return as WebElement
+	@FindBy(xpath = "//div[contains(@class,'SideNavContainer_contractsList1__a1fzv')]/parent::button")
+	private WebElement sideNavContractListMenu;
+	
+	public WebElement sideNavContractListMenu() {
+		return sideNavContractListMenu;
+	}
+	
+	//This holds Esing & Estamp menu button present in the side nav and method will return as WebElement
+	@FindBy(xpath = "//div[contains(@class,'SideNavContainer_kycList1__iYc79') and text()='E-sign & E-stamp']/parent::button")
+	private WebElement sideNavEsignEstampMenu;
+	
+	public WebElement sideNavEsignEstampMenu() {
+		return sideNavEsignEstampMenu;
+	}
 	
 	/*
 	 * Table and other elements like

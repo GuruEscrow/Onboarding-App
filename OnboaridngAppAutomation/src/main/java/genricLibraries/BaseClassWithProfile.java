@@ -6,6 +6,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import pom.commonpages.LoginPage;
+
+
 public class BaseClassWithProfile {
 
 	protected PropertiesUtility property;
@@ -15,7 +18,7 @@ public class BaseClassWithProfile {
 	protected JavaUtilitiy java;
 
 //	Pom Classes need to be declared
-	
+	protected LoginPage login;
 
 //	@BeforeSuite   because there is no database to connect in this project
 //	@BeforeTest    because we are not doing parallel execution in this project
@@ -51,6 +54,7 @@ public class BaseClassWithProfile {
 		web.waitUntilElementFound(Long.parseLong(property.readData("time")));
 
 		// pom classes need to initialize
+		login = new LoginPage(driver);
 		
 	}
 
